@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Express Starter Template - Home</title>
+
+    <meta name="keywords" content="" />
+    <meta name="">
+    <meta name="author" content="">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/images/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Web Fonts  -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- intlTelInput CSS -->
+    <link rel="stylesheet" href="/css/intlTelInput.css">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/app.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    {{> pages/nav }}
+
+    <!-- Page Content -->
+    <div class="container">
+      {{{ body }}}
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    {{> pages/footer }}
+
+    <script type="text/javascript">
+        var pluginName = "intlTelInput",
+            defaults = {
+                preferredCountries: [
+                    "bh",
+                    // "sa", 
+                    // "ae", 
+                    // "om", 
+                    // "kw", 
+                    // "qa", 
+                    // "sd", 
+                    // "eg", 
+                    // "ly", 
+                    // "ma", 
+                    // "dz", 
+                    // "tn", 
+                    // "mr", 
+                    // "lb", 
+                    // "sy", 
+                    // "iq", 
+                    // "ps", 
+                    // "jo", 
+                    // "ye",
+                    ""
+                ],
+                // united states and united kingdom
+                initialDialCode: true,
+                americaMode: false,
+                onlyCountries: [
+                    // "bh",
+                    // "ru",
+                    // ""
+                ]
+            };
+    </script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/js/jquery/jquery.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/intlTelInput.js"></script>
+    <script src="/js/jquery/intlTelInput-jquery.js"></script>
+
+  </body>
+
+</html>

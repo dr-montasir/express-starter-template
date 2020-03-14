@@ -1,0 +1,24 @@
+{
+  "name": "express-starter-template",
+  "version": "1.0.0",
+  "description": "Express Starter Template",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Express",
+    "js",
+    "Starter",
+    "Template",
+    "MongoDB",
+    "PWA"
+  ],
+  "author": "Dr. Montasir Mirghani <contact@montasir.me>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "mongoose": "^5.9.4"
+  }
+}
