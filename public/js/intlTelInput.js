@@ -1,7 +1,7 @@
 /*
 $("input").intlTelInput({
-     utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/8.4.6/js/utils.js",
-     preferredCountries: [ "us", "gb" ]
+ 	utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/8.4.6/js/utils.js",
+ 	preferredCountries: [ "us", "gb" ]
 });
 */
 
@@ -21,7 +21,7 @@ author: Jack O'Connor (http://jackocnr.com)
 /*https://github.com/dr-montasir/world-flags-sprite*/
 
 (function($, window, document, undefined) {
-    // here the position of var pluginName function. var pluginName = "intlTelInput", defaults = {}
+	// here the position of var pluginName function. var pluginName = "intlTelInput", defaults = {}
     function Plugin(element, options) {
         this.element = element;
         this.options = $.extend({}, defaults, options);

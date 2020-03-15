@@ -29,9 +29,13 @@ express-starter-template:.
 │   │   ├───flags32.png
 │   │   └───logo.png
 │   ├───js/
+│   │   ├───admin/
+│   │   │   └───sb-admin.min.js
 │   │   ├───jquery/
 │   │   │   ├───intlTelInput-jquery.js
 │   │   │   └───jquery.min.js
+│   │   ├───jquery-easing/
+│   │   │   └───jquery.easing.min.js
 │   │   ├───bootstrap.bundle.min.js
 │   │   └───intlTelInput.js
 │   └───uploads/
@@ -42,7 +46,8 @@ express-starter-template:.
 │       └───index.js
 ├───views/
 │   ├───admin/
-│   │   └───dashboard.handlebars
+│   │   ├───dashboard.handlebars
+│   │   └───index.handlebars
 │   ├───layouts/
 │   │   ├───admin.handlebars
 │   │   └───index.handlebars
@@ -52,6 +57,12 @@ express-starter-template:.
 │   │   └───register.handlebars
 │   └───partials/
 │       ├───admin/
+│       │   ├───breadcrumbs-admin.handlebars
+│       │   ├───footer-admin.handlebars
+│       │   ├───head-admin.handlebars
+│       │   ├───logout-modal-admin.handlebars
+│       │   ├───nav.handlebars
+│       │   └───scripts-admin.handlebars
 │       └───pages/
 │           ├───footer.handlebars
 │           └───nav.handlebars
