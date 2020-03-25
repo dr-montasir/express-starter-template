@@ -10,6 +10,7 @@ express-starter-template:.
 │   └───config.js
 ├───helpers/
 ├───models/
+│   └───Post.js
 ├───node_modules/
 ├───public/
 │   ├───css/
@@ -18,7 +19,7 @@ express-starter-template:.
 │   │   │   ├───fonts/
 │   │   │   ├───less/
 │   │   │   └───scss/
-│   │   ├───app.css
+│   │   ├───blog.css
 │   │   ├───bootstrap.min.css
 │   │   ├───intlTelInput.css
 │   │   └───sb-admin.css
@@ -38,37 +39,40 @@ express-starter-template:.
 │   │   │   └───jquery.easing.min.js
 │   │   ├───bootstrap.bundle.min.js
 │   │   └───intlTelInput.js
+│   ├───summernote/
 │   └───uploads/
 ├───routes/
 │   ├───admin/
-│   │   └───index.js
+│   │   ├───index.js
+│   │   └───posts.js
 │   └───pages/
 │       └───index.js
 ├───views/
 │   ├───admin/
-│   │   ├───dashboard.handlebars
-│   │   └───index.handlebars
-│   ├───layouts/
-│   │   ├───admin.handlebars
-│   │   └───index.handlebars
+│   │   ├───posts/
+│   │   │   ├───create.hbs
+│   │   │   └───index.hbs
+│   │   └───index.hbs
 │   ├───pages/
-│   │   ├───home.handlebars
-│   │   ├───login.handlebars
-│   │   └───register.handlebars
-│   └───partials/
-│       ├───admin/
-│       │   ├───breadcrumbs-admin.handlebars
-│       │   ├───footer-admin.handlebars
-│       │   ├───head-admin.handlebars
-│       │   ├───logout-modal-admin.handlebars
-│       │   ├───nav.handlebars
-│       │   └───scripts-admin.handlebars
-│       └───pages/
-│           ├───footer.handlebars
-│           └───nav.handlebars
+│   │   ├───home.hbs
+│   │   ├───login.hbs
+│   │   └───register.hbs
+│   ├───partials/
+│   │   ├───admin/
+│   │   │   ├───breadcrumbs-admin.hbs
+│   │   │   ├───footer-admin.hbs
+│   │   │   ├───head-admin.hbs
+│   │   │   ├───logout-modal-admin.hbs
+│   │   │   ├───nav.hbs
+│   │   │   └───scripts-admin.hbs
+│   │   └───pages/
+│   │       ├───footer.hbs
+│   │       └───nav.hbs
+│   ├───admin.hbs
+│   └───index.hbs
 ├───.gitignore
-├───package.json
 ├───package-lock.json
+├───package.json
 ├───Procfile
 ├───README.md
 └───server.js
@@ -79,8 +83,9 @@ express-starter-template:.
 ```shell
 npm install express --save
 npm install -g nodemon
-npm install express-handlebars --save
+npm install express-hbs --save
 npm install mongoose --save
+npm install body-parser --save
 ```
 
 

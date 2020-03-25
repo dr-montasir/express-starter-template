@@ -1,7 +1,8 @@
 const path = require('path');
 const express = require('express');
 const mongoose = require('mongoose');
-const exphbs = require('express-handlebars');
+const hbs = require('express-hbs');
+const bodyParser = require('body-parser');
 
 // Include the config.js file
 const config = require('./config/config');
@@ -22,16 +23,25 @@ mongoose.connect(config.MONGODB_ADDON_URI, { useNewUrlParser: true, useUnifiedTo
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Set View Engine
-app.engine('handlebars', exphbs({defaultLayout: 'index'}));
-app.set('view engine', 'handlebars');
+app.engine('hbs', hbs.express4({
+  partialsDir: __dirname + '/views/partials'
+}));
+app.set('view engine', 'hbs');
+app.set('views', __dirname + '/views');
+
+// Body Parser
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.json());
 
 // Load Routes
 const pages = require('./routes/pages/index');
 const admin = require('./routes/admin/index');
+const posts = require('./routes/admin/posts');
 
 // Use Routes
 app.use('/', pages);
 app.use('/admin', admin);
+app.use('/admin/posts', posts);
 
 // ---- LISTENING PORT
 app.listen(config.PORT, () => {
