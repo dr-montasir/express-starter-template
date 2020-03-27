@@ -19,7 +19,7 @@ express-starter-template:.
 │   │   │   ├───fonts/
 │   │   │   ├───less/
 │   │   │   └───scss/
-│   │   ├───blog.css
+│   │   ├───app.css
 │   │   ├───bootstrap.min.css
 │   │   ├───intlTelInput.css
 │   │   └───sb-admin.css
@@ -32,13 +32,21 @@ express-starter-template:.
 │   ├───js/
 │   │   ├───admin/
 │   │   │   └───sb-admin.min.js
-│   │   ├───jquery/
-│   │   │   ├───intlTelInput-jquery.js
-│   │   │   └───jquery.min.js
-│   │   ├───jquery-easing/
-│   │   │   └───jquery.easing.min.js
-│   │   ├───bootstrap.bundle.min.js
-│   │   └───intlTelInput.js
+│   │   ├───app/
+│   │   │   ├───intl-tel-input/
+│   │   │   │   └───intlTelInput.js
+│   │   │   ├───popper/
+│   │   │   │   └───popper.min.js
+│   │   │   └───app.js
+│   │   ├───bootstrap/
+│   │   │   └───bootstrap.bundle.min.js
+│   │   └───jquery/
+│   │       ├───plugins/
+│   │       │   ├───intl-tel-input/
+│   │       │   │   └───intlTelInput-jquery.js
+│   │       │   └───jquery-easing/
+│   │       │       └───jquery.easing.min.js
+│   │       └───jquery.min.js
 │   ├───summernote/
 │   └───uploads/
 ├───routes/
@@ -66,8 +74,11 @@ express-starter-template:.
 │   │   │   ├───nav.hbs
 │   │   │   └───scripts-admin.hbs
 │   │   └───pages/
+│   │       ├───copyright.hbs
 │   │       ├───footer.hbs
-│   │       └───nav.hbs
+│   │       ├───head.hbs
+│   │       ├───nav.hbs
+│   │       └───scripts.hbs
 │   ├───admin.hbs
 │   └───index.hbs
 ├───.gitignore
@@ -87,5 +98,3 @@ npm install express-hbs --save
 npm install mongoose --save
 npm install body-parser --save
 ```
-
-
